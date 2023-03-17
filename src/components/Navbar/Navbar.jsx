@@ -55,7 +55,7 @@ function MainNavbar() {
                   setIsDropdownExpanded(!isDropdownExpnanded);
                 }}
               >
-                Dropdown
+                Lists
               </a>
               <ul
                 className={
@@ -64,12 +64,7 @@ function MainNavbar() {
               >
                 <li>
                   <a className="dropdown-item" href="#">
-                    Action
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Another action
+                    New List
                   </a>
                 </li>
                 <li>
@@ -77,7 +72,13 @@ function MainNavbar() {
                 </li>
                 <li>
                   <a className="dropdown-item" href="#">
-                    Something else here
+                    My Lists
+                  </a>
+                </li>
+
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Pending Lists
                   </a>
                 </li>
               </ul>
