@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { IoIosAddCircleOutline } from "react-icons/io";
 import { IconContext } from "react-icons";
-import Alert from "./Alert";
+import Alert from "../hooks/Alert";
 import Items from "./Items";
 
 const getLocalStorage = () => {
@@ -106,7 +106,7 @@ const NewList = () => {
       <form onSubmit={handleSubmit}>
         {alert.show && <Alert {...alert} removeAlert={showAlert} list={list} />}
         <div className="grid-container">
-          <div class="grid-x">
+          <div className="grid-x">
             <div className="cell small-6">
               <label htmlFor="">
                 <span className="primary label">Name of the item</span>

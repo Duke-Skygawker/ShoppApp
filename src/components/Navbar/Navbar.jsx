@@ -34,20 +34,20 @@ function MainNavbar() {
           id="navbarSupportedContent"
         >
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 h5">
-            <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
+            <li className="nav-item ">
+              <Link className="nav-link" to="/">
                 Home
-              </a>
+              </Link>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Link
-              </a>
-            </li>
+            {/* <li className="nav-item">
+              <Link className="nav-link" to="/items">
+                Items
+                // might need later
+              </Link>
+            </li> */}
             <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle"
-                href="#"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded={isDropdownExpnanded}
@@ -63,9 +63,9 @@ function MainNavbar() {
                 }
               >
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <Link className="dropdown-item" to="newlist">
                     New List
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <hr className="dropdown-divider" />
