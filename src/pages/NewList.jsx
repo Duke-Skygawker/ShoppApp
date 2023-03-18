@@ -162,7 +162,7 @@ const NewList = () => {
       <div className="grid-container" style={{ fontSize: "1.2rem" }}>
         {list.length > 0 && (
           <div>
-            <table>
+            <table className="table table-striped">
               {/* make head invisible if no items */}
               <thead>
                 <tr>

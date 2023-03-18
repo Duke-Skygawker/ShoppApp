@@ -1,10 +1,9 @@
-import React from "react";
 import { IoBanSharp, IoDocumentTextOutline } from "react-icons/io5";
 import { IconContext } from "react-icons";
 const Items = ({ items, removeItem, editItem }) => {
   return (
     <>
-      <tbody className="grocery-list">
+      <tbody>
         {items.map((item) => {
           const { id, title, quantity, price, total } = item;
           return (
@@ -17,7 +16,7 @@ const Items = ({ items, removeItem, editItem }) => {
                 <button
                   type="button"
                   style={{ marginTop: "0", marginBottom: "0" }}
-                  className="warning button tiny"
+                  className="btn btn-warning btn-sm"
                   onClick={() => editItem(id)}
                 >
                   <IconContext.Provider value={{ size: "1.5rem" }}>
@@ -29,7 +28,7 @@ const Items = ({ items, removeItem, editItem }) => {
                 <button
                   type="submit"
                   style={{ marginTop: "0", marginBottom: "0" }}
-                  className="alert button tiny"
+                  className="btn btn-danger btn-sm"
                   onClick={() => removeItem(id)}
                 >
                   <IconContext.Provider value={{ size: "1.5rem" }}>
